@@ -1,4 +1,4 @@
-#!/opt/homebrew/bin/php
+#!/usr/bin/env php
 <?php
 
 require "functions.php";
