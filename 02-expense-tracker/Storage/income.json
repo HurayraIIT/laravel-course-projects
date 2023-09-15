@@ -2,19 +2,13 @@
     {
         "id": 1,
         "category": "Salary",
-        "amount": 120,
+        "amount": 20000,
         "description": "Monthly Salary For August"
     },
     {
         "id": 2,
-        "category": "Profit Share",
-        "amount": 300,
+        "category": "Bonus",
+        "amount": 3000,
         "description": "Profit Share for 2023"
-    },
-    {
-        "id": 3,
-        "category": "testcat",
-        "amount": 123,
-        "description": "This is a test description."
     }
 ]

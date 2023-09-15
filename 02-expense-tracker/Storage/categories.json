@@ -2,11 +2,7 @@
     "income-categories": [
         "Salary",
         "Bonus",
-        "Profit Share",
-        "income cat 01",
-        "income cat 02",
-        "random",
-        "testcat"
+        "Profit Share"
     ],
     "expense-categories": [
         "House Rent",
