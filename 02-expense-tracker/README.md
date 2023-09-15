@@ -1,9 +1,8 @@
 # Assignment 2: Build Expense tracker CLI app
-----
 
 ## URL: 
 
-https://interactivecares-courses.com/courses/complete-laravel-career-path/assignments/assignment-2-build-expense-tracker-cli-app/
+[Assignment 2](https://interactivecares-courses.com/courses/complete-laravel-career-path/assignments/assignment-2-build-expense-tracker-cli-app/)
 
 ## Description:
 
