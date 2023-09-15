@@ -5,11 +5,13 @@
         "Profit Share",
         "income cat 01",
         "income cat 02",
-        "random"
+        "random",
+        "testcat"
     ],
     "expense-categories": [
         "House Rent",
         "Mess Food bill",
-        "expense category 01"
+        "expense category 01",
+        "wi-fi bill"
     ]
 }

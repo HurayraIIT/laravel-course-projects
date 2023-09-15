@@ -21,6 +21,7 @@ class Income
 
     $this->income[] = $new_income;
     IO::write_file_data($this->income, self::$income_file_path);
+    echo "\n[success] New income created!";
   }
 
   public function view_income()

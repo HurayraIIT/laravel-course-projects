@@ -16,5 +16,11 @@
         "category": "newcat",
         "amount": 113,
         "description": "A new expense."
+    },
+    {
+        "id": 4,
+        "category": "wi-fi bill",
+        "amount": 500,
+        "description": "Paid wi-fi bill for August."
     }
 ]

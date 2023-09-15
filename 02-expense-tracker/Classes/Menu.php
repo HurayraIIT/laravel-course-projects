@@ -76,13 +76,14 @@ class Menu
       case self::VIEW_SAVINGS:
         $this->view_savings();
         break;
-      
+
       default:
         echo "Invalid choice!";
     }
   }
 
-  private function add_category() {
+  private function add_category()
+  {
     echo "Press [1] to add income category\n";
     echo "Press [2] to add expense category\n";
     $choice = (int) readline();
@@ -94,36 +95,64 @@ class Menu
     $cat = new Categories();
     $category_type = $choice === 1 ? "income-categories" : "expense-categories";
     $cat->add_category($category_type, $name);
+    $this->view_categories();
   }
 
-  private function add_income() {
-    echo "ToDo: add_income";
+  private function add_income()
+  {
+    $category = readline("\nEnter a category for this income: ");
+    $cat = new Categories();
+    if (!$cat->category_exists('income-categories', $category)) {
+      echo "\n[note] This category does not exist. Adding it to the list...";
+      $cat->add_category('income-categories', $category);
+    }
+    $amount = (int) readline("\nEnter the income amount: ");
+    $description = readline("Enter a description: ");
+    $inc = new Income();
+    $inc->add_income($amount, $category, $description);
+    $this->view_incomes();
   }
 
-  private function add_expense() {
-    echo "ToDo: add_expense";
+  private function add_expense()
+  {
+    $category = readline("\nEnter a category for this expense: ");
+    $cat = new Categories();
+    if (!$cat->category_exists('expense-categories', $category)) {
+      echo "\n[note] This category does not exist. Adding it to the list...";
+      $cat->add_category('expense-categories', $category);
+    }
+    $amount = (int) readline("\nEnter the expense amount: ");
+    $description = readline("Enter a description: ");
+    $exp = new Expense();
+    $exp->add_expense($amount, $category, $description);
+    $this->view_expenses();
   }
 
-  private function view_categories() {
-    echo "ToDo: view_categories";
+  private function view_categories()
+  {
     $cat = new Categories();
     $cat->view_categories();
   }
-  private function view_incomes() {
-    echo "ToDo:view_incomes ";
+  private function view_incomes()
+  {
     $inc = new Income();
     $inc->view_income();
   }
-  private function view_expenses() {
-    echo "ToDo: view_expenses";
+  private function view_expenses()
+  {
     $exp = new Expense();
     $exp->view_expense();
   }
-  private function view_savings() {
-    echo "ToDo: view_savings";
+  private function view_savings()
+  {
     $inc = new Income();
+    $total_income = $inc->get_total();
+
     $exp = new Expense();
-    $savings = $inc->get_total() - $exp->get_total();
+    $total_expense = $exp->get_total();
+
+    $savings = $total_income - $total_expense;
     echo "\nSavings: {$savings}\n";
+    echo "Income: {$total_income} and Expense: {$total_expense}\n";
   }
 }
