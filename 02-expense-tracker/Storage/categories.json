@@ -1,0 +1,11 @@
+{
+    "income-categories": [
+        "Salary",
+        "Bonus",
+        "Profit Share"
+    ],
+    "expense-categories": [
+        "House Rent",
+        "Mess Food bill"
+    ]
+}

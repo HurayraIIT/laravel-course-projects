@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "category": "House Rent",
+        "amount": 45,
+        "description": "House Rent For August"
+    },
+    {
+        "id": 2,
+        "category": "newcat",
+        "amount": 111,
+        "description": "A new expense."
+    },
+    {
+        "id": 3,
+        "category": "newcat",
+        "amount": 113,
+        "description": "A new expense."
+    }
+]
