@@ -12,17 +12,19 @@ class Categories {
 
   public function add_category(String $category_type, String $name) {
     if ($category_type !== 'income-categories' and $category_type !== 'expense-categories') {
+      echo "\n[failed] Enter a valid catgory type!\n";
       return;
     }
     $this->categories[$category_type][] = $name;
     IO::write_file_data($this->categories, self::$categories_file_path);
+    echo "\n[success] New category added!\n";
   }
 
   public function view_categories() {
     //var_dump($this->categories);
     $i = 0;
     if (isset($this->categories['income-categories'])) {
-      echo "\n\nIncome Categories:\n";
+      echo "\nIncome Categories:\n";
       foreach ($this->categories['income-categories'] as $category) {
         echo "\t{$i}: {$category}\n";
         $i++;
@@ -33,7 +35,7 @@ class Categories {
 
     $i = 0;
     if (isset($this->categories['expense-categories'])) {
-      echo "\n\nExpense Categories:\n";
+      echo "\nExpense Categories:\n";
       foreach ($this->categories['expense-categories'] as $category) {
         echo "\t{$i}: {$category}\n";
         $i++;

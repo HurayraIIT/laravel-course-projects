@@ -26,10 +26,17 @@ class Expense
   public function view_expense()
   {
     foreach ($this->expense as $exp) {
-      echo "\nExpense ID: {$exp['id']}\n";
-      echo "\tAmount: {$exp['amount']}\n";
-      echo "\tCategory: {$exp['category']}\n";
-      echo "\tDescription: {$exp['description']}\n";
+      echo "\nAmount: {$exp['amount']} - ({$exp['category']}) - ({$exp['description']})";
     }
+    echo "\nTotal Expense: {$this->get_total()}\n";
+  }
+
+  public function get_total(): int
+  {
+    $total = 0;
+    foreach ($this->expense as $exp) {
+      $total += (int) $exp['amount'];
+    }
+    return $total;
   }
 }

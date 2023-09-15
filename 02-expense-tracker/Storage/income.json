@@ -4,5 +4,11 @@
         "category": "Salary",
         "amount": 120,
         "description": "Monthly Salary For August"
+    },
+    {
+        "id": 2,
+        "category": "Profit Share",
+        "amount": 300,
+        "description": "Profit Share for 2023"
     }
 ]

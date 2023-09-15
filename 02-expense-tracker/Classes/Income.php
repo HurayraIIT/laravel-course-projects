@@ -26,10 +26,16 @@ class Income
   public function view_income()
   {
     foreach ($this->income as $inc) {
-      echo "\nIncome ID: {$inc['id']}\n";
-      echo "\tAmount: {$inc['amount']}\n";
-      echo "\tCategory: {$inc['category']}\n";
-      echo "\tDescription: {$inc['description']}\n";
+      echo "\nAmount: {$inc['amount']} - ({$inc['category']}) - ({$inc['description']})";
     }
+    echo "\nTotal Income: {$this->get_total()}\n";
+  }
+
+  public function get_total() : int {
+    $total = 0;
+    foreach ($this->income as $inc) {
+      $total += (int) $inc['amount'];
+    }
+    return $total;
   }
 }

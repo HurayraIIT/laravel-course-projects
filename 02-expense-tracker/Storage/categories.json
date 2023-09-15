@@ -2,10 +2,14 @@
     "income-categories": [
         "Salary",
         "Bonus",
-        "Profit Share"
+        "Profit Share",
+        "income cat 01",
+        "income cat 02",
+        "random"
     ],
     "expense-categories": [
         "House Rent",
-        "Mess Food bill"
+        "Mess Food bill",
+        "expense category 01"
     ]
 }

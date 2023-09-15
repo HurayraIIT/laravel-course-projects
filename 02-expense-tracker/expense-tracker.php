@@ -1,3 +1,10 @@
 <?php
 
-echo "Hello World!";
+require "Classes/Menu.php";
+
+while(true) {
+   $menu = new Menu();
+
+   $menu->print_menu();
+   $menu->handle_choice();
+}
