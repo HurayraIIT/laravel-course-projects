@@ -5,7 +5,7 @@ require "functions.php";
 
 // If no string is passed, show help info
 if ($argc < 2) {
-  print_help_info();
+    print_help_info();
 }
 
 // Extract the input string
