@@ -1,0 +1,17 @@
+{
+  "name": "hurayraiit/simple-banking",
+  "description": "This is a super simple banking app.",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Abu Hurayra",
+      "email": "hurayraiit@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}
