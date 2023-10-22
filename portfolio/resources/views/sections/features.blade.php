@@ -8,7 +8,7 @@
                     <i data-feather="activity"></i>
                 </div>
 
-                <h4 class="font-medium text-gray-700 text-lg mb-4">High experience</h4>
+                <h4 class="font-medium text-gray-700 text-lg mb-4">Highly experienced</h4>
 
                 <p class="font-normal text-gray-500 text-md">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
             </div>
@@ -18,7 +18,7 @@
                     <i data-feather="codesandbox"></i>
                 </div>
 
-                <h4 class="font-medium text-gray-700 text-lg mb-4">Useful sandboxes</h4>
+                <h4 class="font-medium text-gray-700 text-lg mb-4">Team Player</h4>
 
                 <p class="font-normal text-gray-500 text-md">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
             </div>
@@ -28,7 +28,7 @@
                     <i data-feather="coffee"></i>
                 </div>
 
-                <h4 class="font-medium text-gray-700 text-lg mb-4">Success side projects</h4>
+                <h4 class="font-medium text-gray-700 text-lg mb-4">Passionate Learner</h4>
 
                 <p class="font-normal text-gray-500 text-md">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
             </div>

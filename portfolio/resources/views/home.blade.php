@@ -3,4 +3,6 @@
 
 @include('sections.intro')
 
+@include('sections.features')
+
 @include('sections.footer')

@@ -2,6 +2,6 @@
 
 @include('sections.navbar')
 
-<h1>About</h1>
+@include('sections.experience')
 
 @include('sections.footer')

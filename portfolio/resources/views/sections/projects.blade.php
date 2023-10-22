@@ -4,50 +4,28 @@
 
         <h1 class="font-medium text-gray-700 text-3xl md:text-4xl mb-5">My Projects</h1>
 
-        <p class="font-normal text-gray-500 text-xs md:text-base mb-10 md:mb-20">Below is a summary of the projects I created</p>
+        <p class="font-normal text-gray-500 text-xs md:text-base mb-10 md:mb-20">Below is a summary of the projects I
+            created</p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="bg-gray-50 px-8 py-10 rounded-md">
+            @foreach ($data as $project)
+                <a href="{{ route('project', ['id' => (int) $project['id']]) }}">
+                    <div class="bg-gray-50 px-8 py-10 rounded-md">
+                        <h3 class="font-bold text-gray-600 text-lg">{{ $project['name'] }}</h6><br>
 
-                <p class="font-normal text-gray-500 text-md mb-4">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
+                            <h6 class="font-semibold text-gray-500 text-md">{{ $project['client'] }} 
+                            </br></br>
+                                <span
+                                    class="font-medium text-gray-300 text-sm"> 
+                                     Started On: {{ $project['start_date'] }}</span></h6>
 
-                <h6 class="font-semibold text-gray-500 text-md">Stephan Clark <span class="font-medium text-gray-300 text-sm">- CEO at EarlyBird</span></h6>
-            </div>
-
-            <div class="bg-gray-50 px-8 py-10 rounded-md">
-
-                <p class="font-normal text-gray-500 text-md mb-4">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
-
-                <h6 class="font-semibold text-gray-500 text-md">Stephan Clark <span class="font-medium text-gray-300 text-sm">- CEO at EarlyBird</span></h6>
-            </div>
-
-            <div class="bg-gray-50 px-8 py-10 rounded-md">
-
-                <p class="font-normal text-gray-500 text-md mb-4">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
-
-                <h6 class="font-semibold text-gray-500 text-md">Stephan Clark <span class="font-medium text-gray-300 text-sm">- CEO at EarlyBird</span></h6>
-            </div>
-
-            <div class="bg-gray-50 px-8 py-10 rounded-md">
-
-                <p class="font-normal text-gray-500 text-md mb-4">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
-
-                <h6 class="font-semibold text-gray-500 text-md">Stephan Clark <span class="font-medium text-gray-300 text-sm">- CEO at EarlyBird</span></h6>
-            </div>
-
-            <div class="bg-gray-50 px-8 py-10 rounded-md">
-
-                <p class="font-normal text-gray-500 text-md mb-4">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
-
-                <h6 class="font-semibold text-gray-500 text-md">Stephan Clark <span class="font-medium text-gray-300 text-sm">- CEO at EarlyBird</span></h6>
-            </div>
-
-            <div class="bg-gray-50 px-8 py-10 rounded-md">
-
-                <p class="font-normal text-gray-500 text-md mb-4">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
-
-                <h6 class="font-semibold text-gray-500 text-md">Stephan Clark <span class="font-medium text-gray-300 text-sm">- CEO at EarlyBird</span></h6>
-            </div>
+                            </br>
+                                <span
+                                    class="font-medium text-gray-300 text-sm"> 
+                                     Completed On: {{ $project['end_date'] }}</span></h6>
+                    </div>
+                </a>
+            @endforeach
         </div>
 
     </div>

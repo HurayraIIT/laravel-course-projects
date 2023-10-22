@@ -2,6 +2,6 @@
 
 @include('sections.navbar')
 
-<h1>Contact</h1>
+@include('sections.single-project')
 
 @include('sections.footer')

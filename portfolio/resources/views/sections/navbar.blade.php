@@ -8,12 +8,12 @@
             </a>
 
             <div class="items-right">
-                <a href="{{ route('about') }}">
-                    <button class="px-7 py-3 md:px-9 md:py-4 bg-white font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500">About</button>
+                <a href="{{ route('home') }}">
+                    <button class="px-7 py-3 md:px-9 md:py-4 bg-white font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500">Home</button>
                 </a>
 
-                <a href="{{ route('contact') }}">
-                    <button class="px-7 py-3 md:px-9 md:py-4 bg-white font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500">Contacts</button>
+                <a href="{{ route('experience') }}">
+                    <button class="px-7 py-3 md:px-9 md:py-4 bg-white font-medium md:font-semibold text-gray-700 text-md rounded-md hover:bg-gray-700 hover:text-white transition ease-linear duration-500">Work Experience</button>
                 </a>
                 
                 <a href="{{ route('projects') }}">
